@@ -13,7 +13,7 @@ public class Main {
         GestionEtudiants e = new GestionEtudiants();
 
 
-        e.ajouterEtudiant(e1);
+        e.ajouterEtudiant(e2);
         e.ajouterEtudiant(e3);
         e.ajouterEtudiant(e4);
 
@@ -28,7 +28,7 @@ public class Main {
         e.trierEtudiantsParId();
         e.displayEtudiants();
         System.out.println("Resultat tri liste par Nom :");
-//        e.trierEtudiantsParNom();
+        e.trierEtudiantsParNom();
         e.displayEtudiants();
 
         System.out.println("Recherche si e2 existe dans la liste :");
