@@ -13,21 +13,22 @@ public class Main {
         GestionEtudiants e = new GestionEtudiants();
 
 
-        e.etudiants.add(e2);
-        e.etudiants.add(e3);
-        e.etudiants.add(e4);
+        e.ajouterEtudiant(e1);
+        e.ajouterEtudiant(e3);
+        e.ajouterEtudiant(e4);
+
         System.out.println("Liste etudiant avant suppression de etudiant e2 :");
         e.displayEtudiants();
 
 
-        e.etudiants.remove(e2);
+        e.supprimerEtudiant(e2);
         System.out.println("Liste etudiant apres suppression de etudiant e2 :");
         e.displayEtudiants();
         System.out.println("Resultat tri liste par ID :");
         e.trierEtudiantsParId();
         e.displayEtudiants();
         System.out.println("Resultat tri liste par Nom :");
-        e.trierEtudiantsParNom();
+//        e.trierEtudiantsParNom();
         e.displayEtudiants();
 
         System.out.println("Recherche si e2 existe dans la liste :");
